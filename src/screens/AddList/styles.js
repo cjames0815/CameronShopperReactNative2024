@@ -45,6 +45,13 @@ const styles = StyleSheet.create({
     color: 'black',
     borderColor: 'lightgrey',
   },
+  priority:{
+    fontSize: 16,
+    borderBottomWidth: 1.0,
+    color: 'black',
+    borderColor: 'lightgrey',
+    marginBottom: 10,
+  },
   date: {
     fontSize: 16,
     borderBottomWidth: 1.0,

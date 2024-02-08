@@ -30,6 +30,13 @@ const styles = StyleSheet.create({
     flex: 1,
     flexWrap: 'wrap',
   },
+  color_priority:{
+    fontSize: 18,
+    marginLeft: 10,
+    flex: 1,
+    flexWrap: 'wrap',
+    color: 'white'
+  }
 });
 
 export default styles;

@@ -39,11 +39,24 @@ const ListScreen = props => {
               for (let i = 0; i < len; i++){
                 //push a row of data at a time onto the results array
                 let item = res.rows.item(i);
+
+                color = ''
+                //setting condition for high and low priority
+                if (item.priority == 'HIGH'){
+                color = 'red'
+                }else{
+                color = 'green'
+                }
+                
+                
+                
                 results.push({
                   id: item.id,
                   name: item.name,
                   store: item.store,
-                  date: item.date,                
+                  date: item.date,
+                  priority: item.priority,  
+                  color_priority: color         
                 });
               }
               //assign results array to lists state variable
@@ -77,6 +90,7 @@ const ListScreen = props => {
             </TouchableOpacity>
         </View>
     </View>
+    
   );
 };
 
