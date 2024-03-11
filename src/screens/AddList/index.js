@@ -85,7 +85,6 @@ const AddListScreen = props => {
                     setPriority(selectedItem)
             
                 }}
-            />
                 buttonTextAfterSelection={(selectedItem, index)=>{
                     return selectedItem;
                 }}
@@ -93,14 +92,12 @@ const AddListScreen = props => {
                    return item; 
                 }}
                 buttonStyle={styles.dropdownBtnStyle}
-                buttonTextStyle={styles.dropdown8tnTxtStyle}
+                buttonTextStyle={styles.dropdownBtnTxtStyle}
                 dropdownStyle={styles.dropdownDropdownStyle}
                 rowStyle={style.dropdownRowStyle}
                 rowTextStyle={style.dropdownRowTxtStyle}
+            />
                 
-
-                
-            
             {datePicker && (
                 <DateTimePickerAndroid
                 value={date}
@@ -117,8 +114,8 @@ const AddListScreen = props => {
             {!datePicker &&(
                 <View>
                     <Pressable onPress={showDatePicker} 
-                    style={styles.datebutton}>
-                        <Text style={style.dataButtonText}>Select A Date</Text>
+                    style={styles.dateButton}>
+                        <Text style={style.dateButtonText}>Select A Date</Text>
                     </Pressable>
                 </View>
 
